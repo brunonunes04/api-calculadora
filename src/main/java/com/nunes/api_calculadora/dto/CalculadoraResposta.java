@@ -8,6 +8,8 @@ public class CalculadoraResposta {
 
     public CalculadoraResposta(){};
     public CalculadoraResposta(int n1, int n2,String operacao,double resposta) {
+        this.n1 = n1;
+        this.n2 = n2;
         this.resposta = resposta;
         this.operacao = operacao;
     }
