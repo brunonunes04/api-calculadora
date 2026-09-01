@@ -21,13 +21,11 @@ public class CalculadoraService {
 
         } else if ("divisao".equalsIgnoreCase(operacao)) {
             if (n2 == 0) {
-                throw new IllegalArgumentException(
-                        "Não é possível dividir por 0."
-                );
+                resultado = 0;
+            } else {
+                resultado = (double) n1 / n2;
             }
-            resultado = (double) n1 / n2;
         }
-
         else if ("multiplicacao".equalsIgnoreCase(operacao)) {
             resultado = n1 * n2;
         } else{
